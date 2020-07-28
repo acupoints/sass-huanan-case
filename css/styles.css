@@ -1,0 +1,170 @@
+html, body {
+  margin: 0rem;
+  padding: 0rem;
+}
+
+.MenuWrap {
+  background-color: indigo;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  min-height: 2.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1rem;
+}
+@media (min-width: 60rem) {
+  .MenuWrap {
+    flex-direction: row;
+  }
+}
+
+.ListItem, .LastItem {
+  background-color: indigo;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  min-height: 2.75rem;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  color: #ebebeb;
+  text-decoration: none;
+}
+.ListItem:hover, .LastItem:hover {
+  background-color: #390063;
+}
+
+.ListItem {
+  width: 100%;
+  justify-content: center;
+}
+@media (min-width: 60rem) {
+  .ListItem {
+    width: auto;
+    margin-right: 1rem;
+  }
+}
+
+.LastItem {
+  width: 100%;
+  justify-content: center;
+}
+@media (min-width: 60rem) {
+  .LastItem {
+    width: auto;
+    margin-left: auto;
+  }
+}
+
+.CenterMe {
+  background-color: #280045;
+  color: #ebebeb;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ebebeb;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.FlexWrapper {
+  display: flex;
+  flex: 1;
+  color: #333333;
+  flex-direction: column;
+}
+@media (min-width: 60rem) {
+  .FlexWrapper {
+    flex-direction: row;
+  }
+}
+
+.SideLeft {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
+@media (min-width: 60rem) {
+  .SideLeft {
+    order: -1;
+    width: 180px;
+  }
+}
+.SideLeft h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  min-height: 2.75rem;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  color: #6e00bf;
+  border-right: 4px solid #6e00bf;
+}
+.SideLeft .ListItem2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  min-height: 2.75rem;
+  display: flex;
+  align-items: center;
+  padding: 0rem 1rem;
+  color: #6e00bf;
+  text-decoration: none;
+  border-bottom: 1px dashed #ebebeb;
+  margin-bottom: 2px;
+}
+.SideLeft .ListItem2:hover {
+  background-color: #e0b5ff;
+}
+
+.MainContent {
+  flex: 1;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  min-height: 2.75rem;
+  padding: 0rem 4rem;
+  order: -1;
+}
+.MainContent h1, .MainContent h2, .MainContent h3, .MainContent h4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.MainContent .VideoContainer {
+  margin: 1.2rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.MainContent .MailAddr {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  min-height: 2.75rem;
+  display: flex;
+  align-items: center;
+  padding: 0rem 1rem;
+  color: #6e00bf;
+}
+
+.Footer {
+  background-color: #280045;
+  color: #ebebeb;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

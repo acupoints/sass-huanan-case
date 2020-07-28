@@ -1,0 +1,188 @@
+html, body {
+    margin: 0rem;
+    padding: 0rem;
+}
+.MenuWrap{
+    background-color: indigo;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    min-height: 2.75rem;
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 60rem) {
+        flex-direction: row;
+    }
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.ListItem, .LastItem {
+    background-color: indigo;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    min-height: 2.75rem;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    color: #ebebeb;
+    &:hover {
+        background-color: darken($color: indigo, $amount: 6%);
+    }
+    text-decoration: none;
+}
+
+.ListItem {
+    width: 100%;
+    justify-content: center;
+    @media (min-width: 60rem) {
+        width: auto;
+        margin-right: 1rem;
+    }
+}
+
+.LastItem {
+    width: 100%;
+    justify-content: center;
+    @media (min-width: 60rem) {
+        width: auto;
+        margin-left: auto;
+    }
+}
+
+.CenterMe {
+    background-color: darken($color: indigo, $amount: 12%);
+    color: #ebebeb;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+html {
+    height: 100%;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.FlexWrapper {
+    display: flex;
+    flex: 1;
+    color: #333333;
+    // padding: .5rem;
+    flex-direction: column;
+    @media (min-width: 60rem) {
+        // width: auto;
+        // margin-left: auto;
+        flex-direction: row;
+    }
+}
+.SideLeft {
+    // background-color: indigo;
+    // color: #ebebeb;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    @media (min-width: 60rem) {
+        // width: auto;
+        // margin-left: auto;
+        order: -1;
+        width: 180px;
+    }
+    h4 {
+        // background-color: indigo;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+        min-height: 2.75rem;
+        display: flex;
+        align-items: center;
+        padding: 0 1rem;
+        // color: #ebebeb;
+        color: lighten($color: indigo, $amount: 12%);
+        border-right: 4px solid lighten($color: indigo, $amount: 12%);
+        @media (min-width: 60rem) {
+            // width: auto;
+            // margin-left: auto;
+            // order: -1;
+        }
+    }
+
+    .ListItem2 {
+        // background-color: indigo;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.2rem;
+        min-height: 2.75rem;
+        display: flex;
+        align-items: center;
+        padding: 0rem 1rem;
+        // color: #ebebeb;
+        color: lighten($color: indigo, $amount: 12%);
+        &:hover {
+            background-color: lighten($color: indigo, $amount: 60%);
+        }
+        text-decoration: none;
+        border-bottom: 1px dashed #ebebeb;
+        margin-bottom: 2px;
+    }
+}
+
+.MainContent {
+    flex: 1;
+    // background-color: indigo;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    min-height: 2.75rem;
+    // display: flex;
+    // align-items: center;
+    padding: 0rem 4rem;
+    // color: #ebebeb;
+    h1, h2, h3, h4 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    order: -1;
+    @media (min-width: 60rem) {
+        // width: auto;
+        // margin-left: auto;
+        // order: -2;
+    }
+    .VideoContainer {
+        margin: 1.2rem auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .MailAddr {
+        // background-color: indigo;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.2rem;
+        min-height: 2.75rem;
+        display: flex;
+        align-items: center;
+        padding: 0rem 1rem;
+        // color: #ebebeb;
+        color: lighten($color: indigo, $amount: 12%);
+        &:hover {
+            // background-color: lighten($color: indigo, $amount: 60%);
+        }
+        // text-decoration: none;
+        // border-bottom: 1px dashed #ebebeb;
+        // margin-bottom: 2px;
+    }
+}
+.Footer {
+    background-color: darken($color: indigo, $amount: 12%);
+    color: #ebebeb;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
